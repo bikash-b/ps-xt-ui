@@ -1,0 +1,100 @@
+.app-title{
+  padding: 20px 20px 0 20px;
+  font-size: 1.6em;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.filter{
+  flex: 20%;
+}
+
+.list{
+  flex: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.footer{
+  text-align: center;
+
+  *{
+    display: inline;
+    padding: 20px 0;
+  }
+
+  h2{
+    font-size: 1.6em;
+  }
+
+  h3{
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filter{
+    flex: 100%;
+  }
+
+  .list{
+    flex: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 20px 0;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1024px) {
+  .filter{
+    flex: 20%;
+    margin-right: 20px;
+  }
+
+  .list{
+    flex: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .filter{
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .container{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .filter{
+    flex: 20%;
+    margin-right: 20px;
+  }
+
+  .list{
+    flex: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+}

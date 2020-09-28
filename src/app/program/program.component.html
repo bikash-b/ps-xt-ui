@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="image-preview">
+    <img *ngIf="image else noImage" class="image" src="image" alt="Image Preview" />
+    <ng-template>
+        <b #noImage> No Preview Image </b>
+    </ng-template>
+  </div>
+  <h3 class="gap value">{{program?.mission_name}} #{{program?.flight_number}}</h3>
+  <div class="gap">
+    <b>Mission Ids: </b>
+    <b *ngIf="!program?.mission_id?.length" class="value">No id found</b>
+  </div>
+  <ul class="ids">
+    <li class="value" *ngFor="let id of program?.mission_id;">{{id}}</li>
+  </ul>
+  <div class="gap">
+    <b>Launch Year: </b>
+    <b class="value">{{program?.launch_year}}</b>
+  </div>
+  <div class="gap">
+    <b>SUccessful Launch: </b>
+    <b class="value">{{program?.launch_success}}</b>
+  </div>
+  <div class="gap">
+    <b>Successful Landing: </b>
+    <b class="value"></b>
+  </div>
+</div>

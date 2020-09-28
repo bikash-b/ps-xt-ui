@@ -1,0 +1,35 @@
+.heading{
+  font-size: 1.2em;
+  font-weight: normal;
+  text-align: center;
+}
+
+.divider{
+  width: 95%;
+  margin: 0 auto;
+  border: 1px solid #D4D4D4;
+}
+
+.wrap{
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 20px;
+}
+
+.option-btn{
+  background: #C5E09B;
+  padding: 5px 20px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.highlight-btn{
+  background: #7ab703;
+  padding: 5px 20px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}

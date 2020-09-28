@@ -1,0 +1,17 @@
+<header>
+    <h1 class="app-title">{{title}}</h1>
+</header>
+<div class="container">
+  <div class="filter">
+    <xt-filter [filterOptions]="filterOptions" (onSelect)="updateListView($event)"></xt-filter>
+  </div>
+  <div class="list">
+    <ng-container *ngFor="let program of programs;">
+      <xt-program [program]="program"></xt-program>
+    </ng-container>
+  </div>
+</div>
+<footer class="footer">
+    <h2>Developed by: </h2>
+    <h3>{{developer}}</h3>
+</footer>

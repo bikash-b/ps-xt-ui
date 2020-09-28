@@ -1,0 +1,14 @@
+<div>
+    <h4 class="heading"> {{filterInfo?.name}} </h4>
+    <hr class="divider">
+    <div class="wrap">
+        <ng-container *ngFor="let option of filterInfo?.items;">
+            <div
+              [ngClass]="selectedFilter?.key
+                === option.key ? 'highlight-btn' : 'option-btn'"
+              (click)="setFilter(option)">
+                {{option?.value}}
+            </div>
+        </ng-container>
+    <div>
+</div>

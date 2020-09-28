@@ -1,0 +1,8 @@
+<div class="container">
+    <h3>Filters</h3>
+    <div class="options">
+        <ng-container *ngFor="let filterOption of filterOptions">
+            <xt-filter-options [filterInfo]="filterOption" (onSelect)="updateFilters($event)"></xt-filter-options>
+        </ng-container>
+    </div>
+</div>
