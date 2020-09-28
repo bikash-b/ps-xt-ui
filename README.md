@@ -26,6 +26,32 @@ Link to view the demo https://ps-xt-ui.herokuapp.com
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## Components API
+
+This API has following three reusable components
+
+- FilterComponent
+- FilterOptionsComponent
+- ProgramComponent
+
+### FilterComponent
+
+- Input: filterOptions
+- Output: onSelect
+- Selector: xt-filter
+
+### FilterOptionsComponent
+
+- Input: filterInfo
+- Output: onSelect
+- Selector: xt-filter-options
+
+### ProgramComponent
+
+- Input: program
+- Output: NA
+- Selector: xt-program
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
