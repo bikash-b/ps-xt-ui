@@ -2,17 +2,21 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
-## Development server
+## Steps to run
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- npm install
+- ng serve
+- Access http://localhost:4200
 
-## Code scaffolding
+## Steps to build and deploy
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- npm heroku-postbuild
+- npm start
 
-## Build
+## Steps to test
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- npm test
+- ng test --code-coverage
 
 ## Running unit tests
 
