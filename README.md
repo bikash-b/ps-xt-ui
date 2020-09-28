@@ -22,6 +22,14 @@ Link to view the demo https://ps-xt-ui.herokuapp.com
 - npm test
 - ng test --code-coverage
 
+## Lighthouse report
+
+![alt text](https://github.com/bikash-b/ps-xt-ui/blob/master/src/assets/images/light-house.PNG)
+
+## Code coverage report
+
+![alt text](https://github.com/bikash-b/ps-xt-ui/blob/master/src/assets/images/code-coverage.PNG)
+
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
