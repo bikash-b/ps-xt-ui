@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
+## Demo
+
+Link to view the demo https://ps-xt-ui.herokuapp.com
+
 ## Steps to run
 
 - npm install
