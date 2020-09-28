@@ -5,6 +5,7 @@ export interface Program{
   launch_year: number;
   launch_success: boolean;
   links: Links;
+  land_success: boolean;
 }
 
 export interface Links{
