@@ -36,21 +36,21 @@ This API has following three reusable components
 
 ### FilterComponent
 
-- Input: filterOptions
-- Output: onSelect
-- Selector: xt-filter
+- Input - filterOptions
+- Output - onSelect
+- Selector - xt-filter
 
 ### FilterOptionsComponent
 
-- Input: filterInfo
-- Output: onSelect
-- Selector: xt-filter-options
+- Input - filterInfo
+- Output - onSelect
+- Selector - xt-filter-options
 
 ### ProgramComponent
 
-- Input: program
-- Output: NA
-- Selector: xt-program
+- Input - program
+- Output - NA
+- Selector - xt-program
 
 ## Further help
 
