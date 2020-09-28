@@ -2,25 +2,55 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
-## Development server
+## Demo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Link to view the demo https://ps-xt-ui.herokuapp.com
 
-## Code scaffolding
+## Steps to run
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- npm install
+- ng serve
+- Access http://localhost:4200
 
-## Build
+## Steps to build and deploy
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- npm heroku-postbuild
+- npm start
 
-## Running unit tests
+## Steps to unit test
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- npm test
+- ng test --code-coverage
 
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Components API
+
+This API has following three reusable components
+
+- FilterComponent
+- FilterOptionsComponent
+- ProgramComponent
+
+### FilterComponent
+
+- Input - filterOptions
+- Output - onSelect
+- Selector - xt-filter
+
+### FilterOptionsComponent
+
+- Input - filterInfo
+- Output - onSelect
+- Selector - xt-filter-options
+
+### ProgramComponent
+
+- Input - program
+- Output - NA
+- Selector - xt-program
 
 ## Further help
 
