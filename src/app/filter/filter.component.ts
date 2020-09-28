@@ -16,6 +16,10 @@ export class FilterComponent {
 
   constructor() {}
 
+  /**
+   * @description This method to emit the filter value
+   * @param event filter value
+   */
   public updateFilters(event: FilterValue): void{
     if (!this.selectedFilters){
       this.selectedFilters = {} as Filter;

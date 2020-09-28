@@ -19,6 +19,9 @@ export class AppComponent implements OnInit {
     private dataService: DataService
   ){}
 
+  /**
+   * @description This method is Angular lifecycle method
+   */
   ngOnInit(): void{
     this.loadPrograms();
     this.dataService
@@ -28,10 +31,18 @@ export class AppComponent implements OnInit {
       );
   }
 
+  /**
+   * @description This method is to loads and update the view
+   * @param event filter options
+   */
   public updateListView(event: Filter): void{
     this.loadPrograms(event);
   }
 
+  /**
+   * @description This method is to fetch the programs
+   * @param filter filter options
+   */
   public loadPrograms(filter?: Filter): void{
     this.dataService
       .getPrograms(filter)

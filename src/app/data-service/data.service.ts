@@ -15,6 +15,9 @@ export class DataService {
     private httpCliet: HttpClient
   ) { }
 
+  /**
+   * This method fetches the static filter options and returns as observable
+   */
   public getFilterOptions(): Observable<any>{
     return this.httpCliet
       .get(
@@ -22,6 +25,10 @@ export class DataService {
       );
   }
 
+  /**
+   * This method fetches the programs from the API
+   * @param filter options
+   */
   public getPrograms(filter?: Filter): Observable<Program[]>{
     const queryStrings = this.queryStrings(filter);
     return this.httpCliet
@@ -30,6 +37,10 @@ export class DataService {
       );
   }
 
+  /**
+   * This method forms and return the query string
+   * @param filter options
+   */
   public queryStrings(filter?: Filter): string{
     const str = [];
     if (!filter){

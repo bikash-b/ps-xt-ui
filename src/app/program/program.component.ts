@@ -15,6 +15,9 @@ export class ProgramComponent implements OnChanges{
 
   constructor() { }
 
+  /**
+   * This is Angular lifecycle method
+   */
   ngOnChanges(): void{
     console.log(this.program);
     this.image = this.program.links.mission_patch;
