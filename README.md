@@ -17,14 +17,10 @@ Link to view the demo https://ps-xt-ui.herokuapp.com
 - npm heroku-postbuild
 - npm start
 
-## Steps to test
+## Steps to unit test
 
 - npm test
 - ng test --code-coverage
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Running end-to-end tests
 
